@@ -1,0 +1,29 @@
+<h1>Listing art_galleries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Avatar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @art_galleries.each do |art_gallery| %>
+      <tr>
+        <td><%= art_gallery.name %></td>
+        <td><%= art_gallery.location %></td>
+        <td><%= image_tag art_gallery.avatar %></td>
+        <td><%= link_to 'Show', art_gallery %></td>
+        <td><%= link_to 'Edit', edit_art_gallery_path(art_gallery) %></td>
+        <td><%= link_to 'Destroy', art_gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Art gallery', new_art_gallery_path %>

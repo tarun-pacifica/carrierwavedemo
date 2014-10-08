@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @art_gallery.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @art_gallery.location %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @art_gallery.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_art_gallery_path(@art_gallery) %> |
+<%= link_to 'Back', art_galleries_path %>

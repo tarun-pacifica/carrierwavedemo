@@ -1,0 +1,21 @@
+<%= form_for(@art_gallery, :html => {:multipart => true})  do |f| %>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar, :accept => "image/gif, image/jpeg, image/svg, image/jpg, image/png", required: :required %>
+  </div>
+  <div class="field">
+    <%= f.label :remote_avatar_url, "or image URL" %><br />
+    <%= f.text_field :remote_avatar_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

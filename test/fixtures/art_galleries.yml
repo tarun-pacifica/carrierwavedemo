@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: art_galleries
+#
+#  id       :integer          not null, primary key
+#  name     :string(255)
+#  location :string(255)
+#  avatar   :text
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  avatar: MyText
+
+two:
+  name: MyString
+  location: MyString
+  avatar: MyText
