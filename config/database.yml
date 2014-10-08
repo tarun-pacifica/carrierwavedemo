@@ -13,5 +13,4 @@ development:
 production:
   <<: *default
   database: carrierwavedemo_production
-  username: <%= ENV['USERNAME'] %>
   password: <%= ENV['CARRIERWAVEDEMO_DATABASE_PASSWORD'] %>
